@@ -1,0 +1,131 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; }
+
+.title {
+  float: left;
+  color: #fff;
+  position: relative;
+  top: 1px;
+}
+
+.clear { clear: 'both'; }
+
+#circle {
+  margin-top: 20px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 300px;
+  height: 300px;
+  background: #f86057;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  border-radius: 150px;
+  color: #fff;
+  font-size: 60px;
+}
+
+header {
+  background-color: #5EA97F;
+  padding: 10px 10px 10px 0px;
+  text-decoration: none;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+#content {
+  background-color: #eee;
+  padding: 52px 0px 10px 0px;
+  position: relative;
+  /*-webkit-box-shadow: -10px 0px 9px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: -10px 0px 9px 0px rgba(0, 0, 0, 0.4);*/
+}
+
+nav {
+  top: 60px;
+  margin-left: -70%;
+  position: fixed;
+  z-index: 2;
+  width: 70%;
+  height: 100%;
+  background: #FFF;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+
+nav .head-img {
+    position: relative;
+    padding: 15px 15px;
+	background:url("../images/menu-head-bg.jpeg");
+	color:white;
+	height:130px;
+}
+
+nav .head-img a {
+	color:white;
+}
+
+nav li {
+    position: relative;
+    padding: 15px 15px;
+    border-bottom: 1px solid #efecec;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+nav li img {
+    margin-top: -7px;
+    margin-right: 6px;
+}
+
+nav li a {
+  color: #222;
+  text-decoration: none;
+}
+
+#hamburger {
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    position: relative;
+    width: 20px;
+    float: left;
+    padding-right: 10px;
+    margin-top: 13px;
+}
+
+#hamburger div {
+    background-color: #fff;
+    height: 3px;
+    margin-top: 3px;
+    width: 16px;
+}
+
+.hamburger-action { cursor: pointer; }
+
+#hamburger-overlay {
+  display: none;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  background: #000;
+}
